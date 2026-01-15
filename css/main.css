@@ -1,0 +1,44 @@
+@import "variables.css";
+
+body {
+  margin: 0;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: system-ui, sans-serif;
+}
+
+nav {
+  background: var(--bg-secondary);
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  margin-left: var(--space-md);
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+section {
+  padding: var(--space-lg) var(--space-md);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.project-card {
+  background: var(--bg-card);
+  padding: var(--space-md);
+  border-radius: 8px;
+}
+
+.diagram-placeholder {
+  background: var(--bg-secondary);
+  padding: var(--space-md);
+  border-radius: 6px;
+}
+.hidden { display: none; }

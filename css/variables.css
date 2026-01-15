@@ -1,0 +1,14 @@
+:root {
+  --bg-primary: #0e1117;
+  --bg-secondary: #161b22;
+  --bg-card: #1f2633;
+
+  --text-primary: #e6edf3;
+  --text-secondary: #9da7b3;
+
+  --accent: #3b82f6;
+
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+}
