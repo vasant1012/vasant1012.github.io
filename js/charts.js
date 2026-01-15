@@ -5,15 +5,22 @@ const dataMap = {
 };
 
 function render(metric) {
-  Plotly.newPlot("chart-container", [{
-    x: ["Logistic", "RF", "XGBoost"],
-    y: dataMap[metric],
-    type: "bar"
-  }]);
+  Plotly.newPlot("chart-container", [
+    {
+      x: ["Logistic", "Random Forest", "XGBoost"],
+      y: dataMap[metric],
+      type: "bar"
+    }
+  ]);
 }
 
 render("performance");
 
 document.querySelectorAll(".metric-toggle button").forEach(btn => {
-  btn.onclick = () => render(btn.dataset.metric);
+  btn.onclick = () => {
+    document.querySelectorAll(".metric-toggle button")
+      .forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    render(btn.dataset.metric);
+  };
 });
