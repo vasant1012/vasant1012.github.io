@@ -174,8 +174,8 @@
 
         const skillsData = {
             core: {
-                labels: ['Python', 'Numpy & Pandas', 'Scikit Learn', 'Feature Engineering', 'Statistical Inference', 'Time Series Analysis'],
-                data: [95, 90, 85, 90, 80, 85], // Update your proficiency percentages here
+                labels: ['Python', 'SQL', 'Numpy & Pandas', 'Scikit Learn', 'Feature Engineering', 'Statistical Inference', 'Time Series Analysis'],
+                data: [95, 65, 90, 85, 90, 80, 85], // Update your proficiency percentages here
                 color: '#4a90e2'
             },
             deep: {
@@ -191,6 +191,20 @@
         };
 
         const experienceData = [
+            {
+                id: 'exp0',
+                year: 'JUL 2025 - Present',
+                role: 'Senior Data Scientist | AIOps COE',
+                company: 'Tavant',
+                location: 'Pune (Hybrid)',
+                description: 'Driving optimized selection and deployment of enterprise AI solutions across hyperscaler cloud platforms.',
+                bullets: [
+                    'Researching cutting-edge Enterprise MLOps practices to ensure scalable, efficient, and reliable AI delivery.',
+                    'Driving optimized selection of microservices across leading hyperscaler cloud platforms for enterprise AI solutions.',
+                    'Implementing MLOps strategies for production-grade LLM and agentic AI projects, bridging the gap between innovation and enterprise-grade deployment.'
+                ],
+                tech: ['LLMOps', 'Agentic AI', 'MLOps', 'Hyperscalers', 'Enterprise AI']
+            },
             {
                 id: 'exp1',
                 year: 'SEP 2021 - Present',
@@ -272,6 +286,27 @@
                 metric: 'Real-time API inference capability',
                 tags: ['Flask API', 'Scikit-learn', 'Feature Engineering'],
                 link: 'https://github.com/vasant1012/Fraud_Detection'
+            },
+            {
+                title: 'Preventive Maintenance (PM) Pricing Engine',
+                category: 'coreml', // 'nlp', 'mlops', or 'coreml'
+                description: 'Designed a statistical pricing engine to estimate preventive maintenance costs using historical service data, demand patterns, and component-level cost distributions. Implemented probabilistic modeling and regression techniques to derive stable and explainable pricing baselines across equipment types.',
+                metric: 'Statistical modeling with cost variance reduction and pricing stability',
+                tags: ['Statistical Modeling', 'Regression', 'Time Series', 'Feature Engineering', 'Explainability']
+            },
+            {
+                title: 'GMP Recommended Pricing Engine (Hybrid ML Model)',
+                category: 'mlops', // 'nlp', 'mlops', or 'coreml'
+                description: 'Built a hybrid pricing recommendation system combining failure prediction and cost estimation. Utilized XGBoost for failure probability modeling and Random Forest Regressor for cost prediction, integrating both signals into a unified pricing strategy. Deployed as a modular inference pipeline with configurable business rules.',
+                metric: 'Hybrid ML pipeline with failure-risk-weighted pricing optimization',
+                tags: ['XGBoost', 'Random Forest', 'Hybrid Modeling', 'Inference Pipeline', 'MLOps']
+            },
+            {
+                title: 'Customer Churn Prediction',
+                category: 'coreml',
+                description: 'Developed a logistic regression model to predict customer churn, utilizing feature engineering and model optimization to achieve high accuracy and actionable insights for retention strategies.',
+                metric: '20% improvement in prediction accuracy',
+                tags: ['Logistic Regression', 'Feature Engineering', 'Model Optimization', 'Customer Segmentation']
             }
         ];
 
