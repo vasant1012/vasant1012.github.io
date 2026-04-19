@@ -41,6 +41,7 @@
                     <a href="#about" class="nav-link text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-[#4a90e2] dark:hover:text-[#4a90e2]">Profile</a>
                     <a href="#expertise" class="nav-link text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-[#4a90e2] dark:hover:text-[#4a90e2]">Skills</a>
                     <a href="#experience" class="nav-link text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-[#4a90e2] dark:hover:text-[#4a90e2]">Experience</a>
+                    <a href="#education" class="nav-link text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-[#4a90e2] dark:hover:text-[#4a90e2]">Education</a>
                     <a href="#projects" class="nav-link text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-[#4a90e2] dark:hover:text-[#4a90e2]">Projects</a>
                     <button id="theme-toggle" class="ml-4 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors focus:outline-none" aria-label="Toggle Dark Mode">
                         <span id="theme-icon-dark" class="text-gray-600 dark:text-gray-400">🌙</span>
@@ -60,7 +61,7 @@
                         Building intelligent <br>
                         <span class="text-[#4a90e2]">data-driven solutions.</span>
                     </h1>
-                    <h2 class="text-xl font-semibold text-gray-500 dark:text-gray-400 mb-6">Data Scientist & Machine Learning Engineer</h2>
+                    <h2 class="text-xl font-semibold text-gray-500 dark:text-gray-400 mb-6">Senior Data Scientist & Machine Learning Engineer</h2>
                     <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
                         Dynamic ML Engineer with 5.5 years of experience developing automated ML pipelines, enhancing data accuracy, and boosting operational efficiency. Skilled in Machine Learning, Deep Learning, and Statistical Methods to solve complex business challenges.
                     </p>
@@ -75,7 +76,7 @@
                     <h3 class="text-xl font-bold mb-6 border-b border-gray-300 dark:border-gray-600 pb-2 text-gray-900 dark:text-white">Impact Metrics</h3>
                     <div class="grid grid-cols-2 gap-6">
                         <div>
-                            <p class="text-4xl font-bold text-[#e27d60]">5.5+</p>
+                            <p class="text-4xl font-bold text-[#e27d60]">6.5+</p>
                             <p class="text-sm text-gray-600 dark:text-gray-400 font-medium mt-1">Years Experience</p>
                         </div>
                         <div>
@@ -87,7 +88,7 @@
                             <p class="text-sm text-gray-600 dark:text-gray-400 font-medium mt-1">Cloud Platforms</p>
                         </div>
                         <div>
-                            <p class="text-4xl font-bold text-[#4a90e2]">10%</p>
+                            <p class="text-4xl font-bold text-[#4a90e2]">25%</p>
                             <p class="text-sm text-gray-600 dark:text-gray-400 font-medium mt-1">Revenue Boost</p>
                         </div>
                     </div>
@@ -128,6 +129,22 @@
                 
                 <div class="lg:col-span-2 bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 shadow-sm min-h-[400px] transition-colors duration-300" id="experience-details">
                 </div>
+            </div>
+        </section>
+
+        <section id="education" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white dark:bg-gray-800/50 border-y border-gray-100 dark:border-gray-800 transition-colors duration-300">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Academic Foundation</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">
+                    A unique interdisciplinary background providing a rigorous mathematical and technical foundation for advanced AI solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="education-grid"></div>
+
+            <div class="mt-16">
+                <h3 class="text-xl font-bold text-center mb-8 uppercase tracking-widest text-gray-400 dark:text-gray-500 text-xs">Professional Certifications</h3>
+                <div class="flex flex-wrap justify-center gap-4" id="cert-grid"></div>
             </div>
         </section>
 
@@ -174,21 +191,51 @@
 
         const skillsData = {
             core: {
-                labels: ['Python', 'SQL', 'Numpy & Pandas', 'Scikit Learn', 'Feature Engineering', 'Statistical Inference', 'Time Series Analysis'],
-                data: [95, 65, 90, 85, 90, 80, 85], // Update your proficiency percentages here
+                labels: ['Python', 'PySpark', 'SQL', 'Numpy & Pandas', 'Scikit Learn', 'Feature Engineering', 'Statistical Inference', 'Time Series Analysis'],
+                data: [85, 80, 70, 87, 80, 89, 80, 65], // Update your proficiency percentages here
                 color: '#4a90e2'
             },
             deep: {
                 labels: ['TensorFlow/Keras', 'PyTorch', 'Large Language Models', 'NLP & GenAI', 'Transfer Learning', 'Recommender Systems'],
-                data: [85, 80, 75, 85, 80, 70],
+                data: [80, 75, 65, 80, 80, 85],
                 color: '#e27d60'
             },
             mlops: {
-                labels: ['Databricks', 'Azure ML Platform', 'GCP / Vertex AI', 'Flask APIs', 'Plotly Dash', 'Git/Version Control'],
-                data: [90, 80, 80, 85, 85, 90],
+                labels: ['Databricks', 'Azure ML Platform', 'GCP / Vertex AI', 'Docker', 'Flask APIs', 'MLflow', 'Plotly Dash', 'Git/Version Control'],
+                data: [85, 80, 60, 75, 90, 80, 85, 90],
                 color: '#4a90e2'
             }
         };
+
+        const educationData = [
+            {
+                degree: 'PGP in AIML',
+                institution: 'Great Learning / UT Austin',
+                year: '2019 - 2021',
+                icon: '🤖',
+                desc: 'Specialized in Advanced Machine Learning and Deep Learning architectures.'
+            },
+            {
+                degree: 'Aircraft Maintenance Engineering',
+                institution: 'Pune Institute of Aviation Technology',
+                year: '2011 - 2014',
+                icon: '✈️',
+                desc: 'Rigorous engineering training approved by DGCA.'
+            },
+            {
+                degree: 'B.Sc. in Physics',
+                institution: 'Mumbai University',
+                year: '2008 - 2011',
+                icon: '⚛️',
+                desc: 'Strong foundation in mathematical modeling and logical reasoning.'
+            }
+        ];
+
+        const certificationData = [
+            { title: 'Databricks Lakehouse Fundamentals', issuer: 'Databricks' },
+            { title: 'Python for Data Science', issuer: 'Great Learning' },
+            { title: 'Modern Webscraping with Python', issuer: 'Udemy' }
+        ];
 
         const experienceData = [
             {
@@ -207,7 +254,7 @@
             },
             {
                 id: 'exp1',
-                year: 'SEP 2021 - Present',
+                year: 'SEP 2021 - JUN 2025',
                 role: 'Sr. Data Scientist / ML Engineer',
                 company: 'Bizmetric India',
                 description: 'Driving business insights and automated ML pipelines using advanced NLP, LLMs, and Databricks.',
@@ -292,21 +339,24 @@
                 category: 'coreml', // 'nlp', 'mlops', or 'coreml'
                 description: 'Designed a statistical pricing engine to estimate preventive maintenance costs using historical service data, demand patterns, and component-level cost distributions. Implemented probabilistic modeling and regression techniques to derive stable and explainable pricing baselines across equipment types.',
                 metric: 'Statistical modeling with cost variance reduction and pricing stability',
-                tags: ['Statistical Modeling', 'Regression', 'Time Series', 'Feature Engineering', 'Explainability']
+                tags: ['Statistical Modeling', 'Regression', 'Time Series', 'Feature Engineering', 'Explainability'],
+                link: 'https://www.linkedin.com/in/vasantrajadhyax'
             },
             {
                 title: 'GMP Recommended Pricing Engine (Hybrid ML Model)',
                 category: 'mlops', // 'nlp', 'mlops', or 'coreml'
                 description: 'Built a hybrid pricing recommendation system combining failure prediction and cost estimation. Utilized XGBoost for failure probability modeling and Random Forest Regressor for cost prediction, integrating both signals into a unified pricing strategy. Deployed as a modular inference pipeline with configurable business rules.',
                 metric: 'Hybrid ML pipeline with failure-risk-weighted pricing optimization',
-                tags: ['XGBoost', 'Random Forest', 'Hybrid Modeling', 'Inference Pipeline', 'MLOps']
+                tags: ['XGBoost', 'Random Forest', 'Hybrid Modeling', 'Inference Pipeline', 'MLOps'],
+                link: 'https://www.linkedin.com/in/vasantrajadhyax'
             },
             {
                 title: 'Customer Churn Prediction',
                 category: 'coreml',
                 description: 'Developed a logistic regression model to predict customer churn, utilizing feature engineering and model optimization to achieve high accuracy and actionable insights for retention strategies.',
                 metric: '20% improvement in prediction accuracy',
-                tags: ['Logistic Regression', 'Feature Engineering', 'Model Optimization', 'Customer Segmentation']
+                tags: ['Logistic Regression', 'Feature Engineering', 'Model Optimization', 'Customer Segmentation'],
+                link: 'https://www.linkedin.com/in/vasantrajadhyax'
             }
         ];
 
@@ -436,6 +486,31 @@
             });
         }
 
+        function renderEducation() {
+            const grid = document.getElementById('education-grid');
+            grid.innerHTML = educationData.map(edu => `
+                <div class="edu-card bg-white dark:bg-gray-800 p-8 rounded-2xl border dark:border-gray-700 shadow-sm flex flex-col items-center text-center">
+                    <span class="text-4xl mb-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-full">${edu.icon}</span>
+                    <h4 class="font-bold text-xl dark:text-gray-100 mb-2 leading-tight">${edu.degree}</h4>
+                    <p class="text-[#4a90e2] font-bold text-sm mb-4 uppercase tracking-wider">${edu.institution}</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">${edu.desc}</p>
+                    <span class="mt-auto bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 px-4 py-1 rounded-full text-xs font-bold">${edu.year}</span>
+                </div>
+            `).join('');
+
+            const certGrid = document.getElementById('cert-grid');
+            certGrid.innerHTML = certificationData.map(c => `
+                <div class="bg-[#e27d60]/10 border border-[#e27d60]/20 px-4 py-3 rounded-xl flex items-center space-x-3">
+                    <div class="p-2 bg-[#e27d60] rounded-lg text-white text-xs">📜</div>
+                    <div class="text-left">
+                        <p class="text-sm font-bold dark:text-gray-100 leading-tight">${c.title}</p>
+                        <p class="text-[10px] text-gray-500 dark:text-gray-500 uppercase tracking-widest">${c.issuer}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+
         function renderTimelineDetails(id, clickedElement) {
             const exp = experienceData.find(e => e.id === id);
             if (!exp) return;
@@ -538,7 +613,8 @@
             initChart();
             setupSkillTabs();
             renderTimelineList();
-            renderTimelineDetails(experienceData[0].id, null); 
+            renderTimelineDetails(experienceData[0].id, null);
+            renderEducation(); 
             renderProjects();
             setupProjectFilters();
         });
